@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecoreArth N&J</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            flex: 1 1 100vw;
+        }
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3px;
+            flex: 1 1 100vw;
+        }
+        header, nav, main, aside, footer {
+            background-color: bisque;
+            display: flex;
+            margin: 3px;
+        }
+        header {
+            flex: 1 1 100vw;
+            height: 100px;
+        }
+        nav {
+            flex: 1 1 100vw;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav a {
+            margin: 5%;
+            font-size: 20pt;
+        }
+
+        main{
+            flex: 20 1 500px;
+            height: calc(100vh - 224px)
+        }
+
+        aside {
+            flex: 1 1 200px;
+        }
+
+        footer {
+            flex: 1 1 100vw;
+            height: 100px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @media only screen and (max-width: 923px) {
+            main {
+                height: calc(100vh - 330px);
+            }
+            aside {
+                flex: 1 1 100vw;
+                height: 100px;
+
+            }
+            @media only screen and (max-width: 717px) {
+                nav {
+                    height: 100px;
+                    }
+                main {
+                    height: calc(100vh - 435px);
+                }
+        }
+    </style>
+</head>
+<body>
+    <Header>Cabeçalho</Header>
+    <nav>
+    <a href="Inicio">inicio</a>
+    <a href="Produtos">Produtos</a>
+    <a href="Sobre">Sobre</a>
+    <a href="Contato">Contato</a>
+    </nav>
+    <main>Principal</main>
+    <aside>Relacionado</aside>
+    <footer>Rodapé</footer>
+</body>
+</html>
